@@ -12,6 +12,9 @@ Once you have registered, ping @Doug on the [nx-hackathon](https://nx-hackathon.
 
 #### Obtaining Cinnamon Credentials
 
+> Please Note:  You only need these credentials if you plan to use Cinnamon for monitoring your application **OR** if you want to build the lagom-evolution scaffold project that is on Bitbucket
+
+
 Akka instrumentation, called Cinnamon, requires credentials to access the private repository that contains Cinnamon.
 Log in to [Lighbend.com's credential pages](https://www.lightbend.com/product/lightbend-reactive-platform/credentials) to obtain credentials.
 
