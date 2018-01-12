@@ -11,8 +11,14 @@ Instructions for how to set this up will be forthcoming
 ### Accounts Needed (if you dont already have these)
 #### Github
 Please create a github account for yourself (if you dont already have one)
-#### Slack
-We will use a specially created slack workspace for this event.  The workspace is located (http://
+##### Git Training Materials
 
+
+#### Slack
+We will use a specially created slack workspace called [nx-hackathon.slack.com](https://nx-hackathon.slack.com) for this event.
+
+##### Slack How-to's
+###### Creating a private channel for your team
+![how-to-create-private-channel](resources/how-to-create-private-channel.jpeg)
 
 

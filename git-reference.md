@@ -1,7 +1,7 @@
 # Git Reference
 
 This guide is a quick introduction to using Git. The most common commands are
- described for reference. This guide's examples uses the [lagom-evolution on Bitbucket](https://bitbucket.org/nx-team/lagom-evolution/src)
+ described for reference. This guide's examples uses the [Evolution on Bitbucket](https://bitbucket.org/nx-team/evolution/src)
  repository using the [command line tool](https://help.github.com/articles/set-up-git/#setting-up-git). 
 
 ## Overview
