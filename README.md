@@ -6,7 +6,7 @@
 #### [Intellij](http://mdp.tylingsoft.com/)
 It would be best if you use the ultimate edition.  While this requires a subscription, you can get a trial edition of the software for 30 days.
 #### [Visual Studio Code](http://https://code.visualstudio.com) with [Graphviz] extention
-[Instructions to install](doc/graphviz.md)
+[Instructions to install](doc/GraphViz.md)
 
 
 ### II. Accounts Setup (if you dont already have these)
