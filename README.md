@@ -17,8 +17,6 @@ Please create a github account for yourself.  Once you have created that account
 We will use a specially created slack workspace called [nx-hackathon.slack.com](https://nx-hackathon.slack.com) for this event.
 
 ### III. Pre-Read Materials
-[Reactive Manifesto](https://www.reactivemanifesto.org/)
-[Ubiquitous Language](https://martinfowler.com/bliki/UbiquitousLanguage.html)
 
 ### Resources
 [Here](./doc/resource-index.md) is a list of resources that you can use to help you prep for the event.
