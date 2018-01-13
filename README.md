@@ -6,7 +6,7 @@
 #### [Intellij](http://mdp.tylingsoft.com/)
 It would be best if you use the ultimate edition.  While this requires a subscription, you can get a trial edition of the software for 30 days.
 #### [Visual Studio Code](http://https://code.visualstudio.com) with [Graphviz] extention
-[Instructions to install](doc/GraphViz.md)
+[Instructions to install](./doc/GraphViz.md)
 
 
 ### II. Accounts Setup (if you dont already have these)
@@ -21,4 +21,4 @@ We will use a specially created slack workspace called [nx-hackathon.slack.com](
 [Ubiquitous Language](https://martinfowler.com/bliki/UbiquitousLanguage.html)
 
 ### Resources
-[Here](doc/resources) is a list of resources that you can use to help you prep for the event.
+[Here](./doc/resource-index.md) is a list of resources that you can use to help you prep for the event.
