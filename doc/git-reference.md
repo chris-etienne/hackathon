@@ -30,8 +30,11 @@ A fork is a copy of a repository. Forking a repository allows you to freely
  fork are _not_ seen in the main repo until your PR is `merged` into the main repo by the repo
  owner.
 
-From the [project](https://bitbucket.org/nx-team/evolution/overview) page on BitBucket,
- use the `create` (the "+" icon under search on the left-hand menu).
+From the [project](https://github.com/evolution-labs/hackathon) page on Github,
+ use the `fork` icon:
+ 
+![image](resources/fork-repository.jpeg)
+
  To access the `Fork this repository` under `Get to Work` of the create pop-up menu.
 
 See also: [Github Doc - Forking](https://help.github.com/articles/fork-a-repo/)
@@ -43,14 +46,11 @@ Next, you want to `clone` your fork to your local development environment.
  If you not provided a public SSH key to your Bitbucket account, you'll need to choose
  the `HTTPS` URL format.
 
-If you have trouble locating your fork, view the `Forks`
- list from the main repo's (overview page)[https://bitbucket.org/nx-team/evolution/overview].
- 
 `clone` your repo from the directory that you want the source tree to be cloned into. If you clone
-  from within `~/src`, cloning the top level of Evolution will be in `/src/evolution`
+  from within `~/src`, cloning the top level of Evolution will be in `/src/hackathon`
 
 ``` 
-git clone git@bitbucket.org:<YOUR NAME HERE>/evolution.git
+git clone git@github.com:<YOUR NAME HERE>/hackathon.git
 ```
 
 ### Add the Upstream Remote
@@ -61,11 +61,11 @@ To keep track of the original repo, you need to add the original repo as a `remo
 By convention, `upstream` refers to the original repo that you have forked.
 
 Obtain the upstream URL from the `overview` page of the
- [Evolution Project](https://bitbucket.org/nx-team/evolution/overview).
+ [Hackathon Project](git@github.com:evolution-labs/hackathon.git).
  Add this URL as a remote named `upstream` to your repo.
 
 ```
-git remote add upstream git@bitbucket.org:nx-team/evolution.git
+git remote add upstream git@github.com:evolution-labs/hackathon.git
 ```
 
 Next, fetch the upstream to make its branches available to your local repo.
@@ -80,10 +80,10 @@ git remote -v
 
 Expected output
 ````
-origin	git@bitbucket.org:<YOUR NAME HERE>/evolution.git (fetch)
-origin	git@bitbucket.org:<YOUR NAME HERE>/evolution.git (push)
-upstream	git@bitbucket.org:nx-team/evolution.git (fetch)
-upstream	git@bitbucket.org:nx-team/evolution.git (push)
+origin	git@github.com:<YOUR NAME HERE>/hackathon.git (fetch)
+origin	git@github.com:<YOUR NAME HERE>/hackathon.git (push)
+upstream	git@github.com:evolution-labs/hackathon.git (fetch)
+upstream	git@github.com:evolution-labs/hackathon.git (push)
 ````
 
 See also:
