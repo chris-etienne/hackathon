@@ -1,4 +1,3 @@
-
 ## Case study
 ### The Opportunity
 
