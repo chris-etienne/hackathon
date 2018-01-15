@@ -1,4 +1,3 @@
-# Pre-read Materials
 
 ## Case study
 ### The Opportunity
