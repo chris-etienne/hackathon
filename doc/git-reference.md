@@ -16,7 +16,10 @@ When URL's are specific to your account, you'll want to replace the `<YOUR NAME 
 ### Authentication
 
 You can authenticate with `Bitbucket` via `https` or `ssh`. To use ssh, recommended, add a public key
- to your bitbucket user account settings, (`ssh-keys`)[https://bitbucket.org/account/user/<YOUR NAME HERE>/ssh-keys/]. 
+ to your bitbucket and github user account settings.
+ 
+[Instructions for setting up ssh](/docs/setting-up-ssh.md)
+
  
 ### Fork a Repository 
 
