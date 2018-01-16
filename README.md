@@ -27,16 +27,16 @@ We will use a specially created slack workspace called [nx-hackathon.slack.com](
 ### III. Materials to Prepare you for the hackathon
 #### A. Read the [case study](pre-read-case-study.md)
 #### B. Look at the [forks](https://github.com/evolution-labs) in the evolution-labs github account
->##### [Online Auction (Scala)](https://github.com/evolution-labs/online->auction-scala) 
+>##### [Online Auction (Scala)](https://github.com/evolution-labs/online-auction-scala) 
 >Reference Application using Lagom, Kafka and Cassandra, written in **Scala**.
 
->##### [Online Auction (Java)](https://github.com/evolution-labs/online->auction-java)
+>##### [Online Auction (Java)](https://github.com/evolution-labs/online-auction-java)
 >Reference Application using Lagom, Kafka and Cassandra, written in **JAVA**
 
 >##### [pykafka](https://github.com/evolution-labs/pykafka)
 >Apache Kafka client for Python with examples. [Documentation here.](http://pykafka.readthedocs.io/en/latest/)
 
->##### [Apache Kafka .NET Client](https://github.com/evolution->labs/confluent-kafka-dotnet)
+>##### [Apache Kafka .NET Client](https://github.com/evolution-labs/confluent-kafka-dotnet)
 >Confluent's Apache Kafka .NET client [Docs here.](https://docs.confluent.io/current/clients/confluent-kafka-dotnet/api/Confluent.Kafka.html)
 
 >##### [ExcelDna](https://github.com/evolution-labs/ExcelDna)
