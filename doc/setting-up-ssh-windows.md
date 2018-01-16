@@ -80,4 +80,4 @@ $ pbcopy < ~/.ssh/id_rsa.pub
 5. Enter a Label for your new key, for example, Default public key.
 6. Paste the copied public key into the SSH Key field.
 
-![image](/resources/add-ssh-key.png)
+![image](../resources/add_ssh_key.png)
