@@ -19,7 +19,7 @@ Please create a github account for yourself.  Once you have created that account
 > **Notes on the use of GitHub:**  You may find it odd that I am recommending that you get a GitHub account when, as a company, we use BitBucket.  
 
 ##### Securing Github
-###### [Set up an ssh key](/docs/setting-up-ssh.md)
+###### [Set up an ssh key](/docs/setting-up-ssh-windows.md)
 
 
 
