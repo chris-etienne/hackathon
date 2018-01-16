@@ -3,7 +3,9 @@
 - [Websites](#website-resources)
 - [Interesting Perspectives](#interesting-perspectives)
 - [Gitter Chat Rooms](#gitter-chat-rooms)
-
+- [Helpful Setup Info](#helpful-setup-info)
+- [Links to Exercises](/exercises/overview.md)
+- [Code Examples]() Forthcoming
 ---
 
 ## Books
@@ -46,3 +48,11 @@ Akka
 - [lagom/lagom](https://gitter.im/lagom/lagom)
 - [scala/scala](https://gitter.im/scala/scala)
 - [akka/akka](https://gitter.im/akka/akka)
+
+## Helpful Setup Info
+
+- [Git Reference](/doc/git-reference.md)
+- [Setting up SSH](/doc/setting-up-ssh-windows.md)
+- [Setting up a private channel on Slack](/doc/slack.md)
+- [Setting up GraphViz](/doc/GraphViz.md)
+
