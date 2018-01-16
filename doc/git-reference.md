@@ -230,4 +230,5 @@ git push origin master
 ## Additional Resources
 
 [Git Cheat Sheet](http://www.ndpsoftware.com/git-cheatsheet.html)
+
 [Git Immersion](http://gitimmersion.com/)
