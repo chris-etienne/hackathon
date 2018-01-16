@@ -64,7 +64,7 @@ Below is a list of code samples that you can try out and get a feel for how Lago
 ### Code Generators
 [Online Lagom Project Bootstrapper](https://developer.lightbend.com/start/?group=lagom&project=lagom-java-maven)
 
-#### .g8 Templates
+### .g8 Templates
 > Instructions for using .g8 Templates
 > See [example](/examples/lagom/using-g8-lagom.md) for using sbt code generator here
 
@@ -115,11 +115,12 @@ Shorter Version - 18 mins
 - [Managing Data Persistence](https://youtu.be/yj581pSRflQ)
   - Systems are distributed. Akka Cluster and Akka Persistence are used under the hood to a create distributed system. CQRS and event sourcing patterns are fully supported. 
    - Runtime: 16 MINS
-
+---
 ### Exercise
 
 In this exercise, you will build your first microservice using Lagom.  
 
+----
 ### Frequently asked questions
 #### Scala
 [How do I incorporate an external service (non-lagom) into a lagom application?](https://www.lagomframework.com/documentation/1.4.x/scala/IntegratingNonLagom.html)
