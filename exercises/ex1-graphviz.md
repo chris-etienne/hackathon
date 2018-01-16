@@ -1,20 +1,64 @@
-# Pre-read Materials
+# Exercise One: Domain Driven Design and Event Sourcing
+##### Technology Used: GraphViz
 
-## Case study
-### The Opportunity
+Take a moment a consider the events that happen behind the scenes in a system that uses taylor series approximation to provide near real time valuation of a portfolio of interest rate swaps.
 
-Recently, the head of Fixed Income from Besuto, a large global bank, reached out to our Sales Office to discuss a potential opportunity. "We've hired a very senior group of traders from the leading Investment Banks in NY.  We want to become a serious player in the OTC Derivatives Markets." said the head of Fixed Income. "These guys just can't be sitting around -- but I can't have them trading without the right tools to manage their risk.", he added.
+#### Events:  Understanding the Verbs
+Events are the things that happened -- past tense -- they are immutable facts. They represent a trail of crumbs that are left behind a process.  In a system that uses [eventsourcing](link), events are appended to a write-only journal. These events (past tense verbs) capture state changes in the entities (the nouns).  
 
-Besuto is one of the largest financial institutions in the world, offering comprehensive services including private banking and venture capital through its subsidiaries.  The parent company has over 900 offices and 56,000 employees worldwide in nearly 40 countries throughout the Americas, EMEA, and Asia.
+#### The Journal as an Event Ledger:  Internal Accounting of Events
+This journal is a ledger of sorts.  It records everything that happened (that the particular entity cares about).  We represent all state changes as events and those immutable facts are appended to this ledger, just as an accountant makes journal entries. To recreate the current state of an entity when it is started we replay these events.
 
-The bank has made it clear that it plans on gaining a bigger slice of the pie on Wall Street. As well as building out its fixed-income business, it’s also been hiring for Derivatives Trading.   In May of 2017, Besuto hired a new Head of Derivatives trading.  He will lead the bank's US derivatives trading activities, which currently includes Rates and Foreign Exchange products.
+#### The Nouns:  Aggregates and Peristent Entities
 
-The head of Derivatives trading is also a member of the bank's investment strategy team which is responsible for building out the overall derivatives platform for the bank, including the XVA function. "We have a lot of wood to chop, and I want it done right.  I've worked at DB and GS, and our technology gave us a competitive advantage. Convince me that I can trust this to a vendor." said the Derivatives Trading head.  
+The nouns in our system are the domain objects.  Many of us start with these guys when we want to build a system.  We'll likely create some ERD diagram, develop a schema and then translate that into a database design using an ORM.
 
-He continued, "Many of the core analytics that I need are widely available through vendors -- even opensource in some cases --  what these guys don't get though, is that we want to automate the adjustments we make to the "textbook" calculations.  These are topside adjustments to cover the uncertainty in our modeling approach, including liquidity.  What I need is an of analytical services that: (1) never go down, (2) have clean client APIs, REST, fast data support), (3) scale with an increased workload, and (4) log everything, so we can eventually support machine learning.  Finally, its clear to most that firms are widely using Python and Scala for a reason.  I need Python and Scala support as well. I don't know anyone out there that can do all of that -- which is why I think our quant development team is better suited to meet our needs."
+When we use eventsourcing and CQRS
 
-"And one last thing," he added, "No one has figured out how to make a reasonable UI except maybe Bloomberg -- and even their's looks like something out of the late 90s. I need to understand your UI strategy."
+##### Excepts from From Martin Fowler:
+Aggregate is a pattern in Domain-Driven Design. A DDD aggregate is a cluster of domain objects that can be treated as a single unit. An example may be an order and its line-items, these will be separate objects, but it's useful to treat the order (together with its line items) as a single aggregate.
 
-The Sales team's conversations with the bank's head of IT shared a similar theme. "There just isn't an offering in the market that does everything we need.  Your company is known for analytics, but I don't think you can do what we need.  I'm willing to do a proof of concept with you, and if it goes well, we can continue our discussion." said the head of IT.
+An aggregate will have one of its component objects be the aggregate root. Any references from outside the aggregate should only go to the aggregate root. The root can thus ensure the integrity of the aggregate as a whole.
 
-"Before I'd even consider discussing a deal with you, I'm going to need you to show me you understand our needs," she said.  "You have a little over 24 hours to gain my confidence.  I will send you an email tonight that outlines what I need from you, and we'll schedule a meeting tomorrow evening," she added.  "The agenda will consist of three parts: (1) a live demo of your proof of concept, (2) a walkthrough of your roadmap that shows the evolution of your product for the next two years, and (3) a list of your development investments for this year.  I want to understand where you are going, your vision and what you are investing in."
+> In Lagom, we would  call this a Persistent Entity (or a Persistent Actor in Akka terms)
+
+Aggregates are the basic element of transfer of data storage - you request to load or save whole aggregates. Transactions should not cross aggregate boundaries.
+
+> IMPORTANT NOTE 
+**<p>DDD Aggregates are sometimes confused with collection classes (lists, maps, etc). DDD aggregates are domain concepts (order, clinic visit, playlist), while collections are generic. An aggregate will often contain mutliple collections, together with simple fields. The term "aggregate" is a common one, and is used in various different contexts (e.g. UML), in which case it does not refer to the same concept as a DDD aggregate.</p>**
+
+#### Events, Commands and Changes in State
+
+A persistent entity (aggregate root) has a stable identifier and for a given id there will only be one instance of the entity. These entities can make up the "nouns" in your service. If you know the identifier you can send messages, so called **commands**, to the entity.
+
+A common type of command is a query command.  This is a **read-side request** to the Service that is consumed by a persistent entity.  When the persistent entity takes the command, it will validate it and then decide how to respond to the query.  Inside the entity, the external command/query is transformed into an internal command that drives behavior of the service.
+
+
+
+### Exercise
+**STEP ONE:** On a piece of paper, write a timeline starting at 0ms.  List the events that occur in the system along this timeline.
+
+What you should find is that you have clumps of events.  If you think about it, that makes sense.  These "clumps" of events likely occur in the same context -- more about why this matters in a moment.
+
+
+
+### Eventsourcing
+The traditional way to persist an entity is to save its current state. Event sourcing uses a radically different, event-centric approach to persistence. A business object is persisted by storing a sequence of state changing events. Whenever an object’s state changes, a new event is appended to the sequence of events. Since that is one operation it is inherently atomic. A entity’s current state is reconstructed by replaying its events.
+
+### Exercise
+
+#### Step One: Eventstorming
+
+
+
+
+Using graphviz, create a diagram that shows the events that occur in a system that uses taylor series approximation to provide near real time valuation of a portfolio of interest rate swaps.
+
+Sample Events to Consider
+
+yieldCurveUpdated
+valuationChanged
+tradeExecuted
+quoteTicked
+
+
