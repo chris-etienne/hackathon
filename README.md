@@ -23,7 +23,7 @@ You should probably set up an ssh key rather than using HTTPS authentication.  T
 #### B.  Get a [Slack](https://www.slack.com) account
 We will use a specially created slack workspace called [nx-hackathon.slack.com](https://nx-hackathon.slack.com) for this event.
 
-### III.  Fork our private github repository and clone your fork
+### III.  Fork our private github repository (or our bitbucket repo, if you are already a bitbucket user) and clone your fork
 
 #### Step One:    
 
