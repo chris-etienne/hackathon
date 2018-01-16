@@ -1,10 +1,12 @@
 # Overview of Exercises
 
+#### UPDATE: EXERCISE I IS AVAILABLE
+
 ## Exercise I
 ### [Domain Driven Design with Graphviz](ex1-graphviz.md)
 ## Exercise II
-### [Introduction to Scala and the REPL](ex2-scala.md)
+### [Introduction to Scala and the REPL]()
 ## Exercise III
-### [Actors and Akka](ex3-akka.md)
+### [Actors and Akka]()
 ## Exercise IV
-### [Lagom - A framework for Reactive Microservices](ex4-lagom.md)
+### [Lagom - A framework for Reactive Microservices]()

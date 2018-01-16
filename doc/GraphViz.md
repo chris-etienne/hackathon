@@ -20,10 +20,6 @@ First you'll need to download it from [graphviz.org](http://graphviz.org/downloa
 
 ![image](/resources/8-downloading=dot.PNG)
 
-You can tell if its not installed if you see a message like this:
-
-![image](/resources/7-no-dot-installed.PNG)
-
 2. Install Visual Studio Code
 
 3. Install the [Graphviz (dot) language support for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=Stephanvs.dot)
@@ -49,6 +45,10 @@ If your screen looks like this, you need to install git:
 ![image](/resources/installing-git.PNG)
 
 ### What do I do if Visual Studio can't find DOT.exe?
+
+You can tell if its not installed if you see a message like this:
+
+![image](/resources/7-no-dot-installed.PNG)
 
 First you should find the location of dot.exe. It will likely be located here:
 
