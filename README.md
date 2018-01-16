@@ -6,10 +6,8 @@
 #### [Intellij](https://www.jetbrains.com/idea/)
 For at least a portion of the hackathon, you will be using [Scala](https://www.scala-lang.org/).  The preferred IDE for Scala is [Intellij](https://www.jetbrains.com/idea/).  It would be best if you use the ultimate edition.  While this requires a subscription, you can get a trial edition of the software for 30 days.
 #### [Visual Studio Code](http://https://code.visualstudio.com) with [Graphviz](./doc/GraphViz.md) extention
-We'll use an extension for Visual Studio Code to assist us in our designs.  This extension allows Visual Studio Code to interpret the [DOT lanaguage](https://en.wikipedia.org/wiki/DOT_graph_description_language).
-
-##### Installing Graphviz
-You should follow these instructions provided [here.](./doc/GraphViz.md)
+We'll use an extension for Visual Studio Code to assist us in our designs.  This extension allows Visual Studio Code to interpret the [DOT language](https://graphviz.gitlab.io/_pages/doc/info/lang.html).  You may find the [dotguide] (http://www.graphviz.org/pdf/dotguide.pdf) is useful to you.
+##### Installing Graphviz - follow these instructions provided [here.](./doc/GraphViz.md)
 
 
 ### II. Accounts you need to setup 
