@@ -22,7 +22,6 @@ Please create a github account for yourself.  Once you have created that account
 ##### i.  Make sure that you secure Github, by [setting up an ssh key](/doc/setting-up-ssh-windows.md)
 You should probably set up an ssh key rather than using HTTPS authentication.  The above link provides the steps you'll need to follow if you don't already know how to do this.
 
-
 #### B.  Get a [Slack](https://www.slack.com) account
 We will use a specially created slack workspace called [nx-hackathon.slack.com](https://nx-hackathon.slack.com) for this event.
 
