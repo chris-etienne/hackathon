@@ -22,6 +22,7 @@ Please create a github account for yourself.  Once you have created that account
 ###### [Set up an ssh key](/docs/setting-up-ssh.md)
 
 
+
 #### [Slack](https://www.slack.com)
 We will use a specially created slack workspace called [nx-hackathon.slack.com](https://nx-hackathon.slack.com) for this event.
 
