@@ -6,9 +6,12 @@
 ## Overview
 Consider this a one-hour crash course on Domain Driven Design, CQRS and Eventsourcing.  There is no way one exercise can give you all of what you need to know.  My hope here is to share with you a few notes to help accelerate your learning and perhaps give you some incentive to do further research.  More importantly, we are moving more rapidly toward this approach as we evolve our software and these topics are becoming increasingly more relevant to us in our journey to build a cloud-ready service offerings.
 
-## Read-me first
+## Things to do first:
 
-Read [this article on Domain Driven Design and EventStorming](https://blog.redelastic.com/corporate-arts-crafts-modelling-reactive-systems-with-event-storming-73c6236f5dd7)
+1. Read [this article on Domain Driven Design and EventStorming](https://blog.redelastic.com/corporate-arts-crafts-modelling-reactive-systems-with-event-storming-73c6236f5dd7)
+
+2.  Make sure GraphViz is installed.  Instructions can be found [here](doc/GraphViz).
+
 
 ## Start to learn the terminology
 
@@ -125,23 +128,58 @@ A persistent entity (aggregate root) has a stable identifier and for a given id 
 
 A common type of command is a query command.  This is a **read-side request** to the Service that is consumed by a persistent entity.  When the persistent entity takes the command, it will validate it and then decide how to respond to the query.  Inside the entity, the external command/query is transformed into an internal command that drives behavior of the service.
 
+### What is a bounded context?
+
+Bounded contexts are used to create resiliency in complex systems. Like bulkheads in a ship hull that prevents a breach from sinking the entire ship, a bulkhead in a system prevents unnecessary complexity from leaking outside the contextual boundary.
+
+I like to think of a bounded context as the "boundary" for my microservice.  Microservices should share nothing with the outside world other than the events they emit and the payloads they provide when queried directly.  These boundaries give us the isolation we which facilitate a loosely coupled design where services can be deployed anywhere (location transparency).
+
 ---
 ## Background for Exercise
 
 Take a moment a consider the events that happen behind the scenes in a system that uses taylor series approximation to provide near real time valuation of a portfolio of interest rate swaps.  In this exercise, we will use domain driven design to begin to design a system that can support ticking valuations of this portfolio.  Along the way, we will learn the language of Domain Driven Design.
 
-### Exercise
-**STEP ONE:** On a piece of paper, write a timeline starting at 0ms.  List the events that occur in the system along this timeline.
+In this exercise, you will create a context map that demonstrates communication between Bounded Contexts in the above example.  We'll develop this map using GraphViz and it will serve as a way to identify the services that we would need in our system to support the above use case.
 
-What you should find is that you have clumps of events.  If you think about it, that makes sense.  These "clumps" of events likely occur in the same context.
+### Exercise
+**STEP ONE:** 
+
+On a piece of paper, write a timeline starting at 0ms.  List the events that occur in the system along this timeline.  What you should find is that you have clumps of events.  If you think about it, that makes sense.  These "clumps" of events likely occur in the same context -- the bounded context that will define our services.
 
 **STEP TWO:**
 
-Using graphviz, create a diagram that shows the events that occur in a system that uses taylor series approximation to provide near real time valuation of a portfolio of interest rate swaps.
+The next thing we'll do is take the events we listed in Step One and 
+determine how the system needs to react to these events.  What are the entities that care about the events?  When they react to the event what happens? Do they change state?  Do they emit new events?
 
-Sample Events to Consider
+The reactions to these events are represented are then converted inside the entity (aggregate) into internal commands. These commands in turn, potentially trigger state changes, which in turn create more events.
 
-yieldCurveUpdated
-valuationChanged
-tradeExecuted
-quoteTicked
+At this point, we should have a high level view of the required services to support the use case. 
+
+**STEP THREE:**
+
+Pick one bounded context and create a context diagram that shows the events that the bounded context (think microservice) will need to subscribe to, as well as the commands and queries that the service can accept.
+
+**STEP FOUR:**
+
+Using graphviz, take your work from STEP THREE AND create a context diagram that shows the events that occur in a system that uses taylor series approximation to provide near real time valuation of a portfolio of interest rate swaps.
+
+Sample Events to Consider:
+
+- yieldCurveUpdated
+
+- valuationChanged
+
+- tradeExecuted
+
+- quoteTicked
+
+When considering the above events, think about the information that the event should carry with it.  What do the consumers of the event need to do their job(s)?
+
+#### Note on Context Maps
+> The context map is responsible for defining an explicit boundary between bounded contexts and makes sure they have a right contact point. A context map should be simple enough to be understood by the domain expert and the technical team. The more important issue you should care about is that the context map should not show the detail of a model; instead, they must demonstrate the integration points and the flow of data between bounded contexts.
+
+> Anyone can do a context map.  The context map is independent of the technology that you use to satisfy the requirement.  The map is a valuable tool to show the relationship between different parts of the system. A context map ensures enabling technical teams to have the best possible chance of overcoming issues early and to avoid accidentally weakening the usefulness of the models by violating their integrity.
+
+> In the end, we will have several context maps.  Some context maps will cover the interactions inside the bounded context and others will show the relationships between different bounded contexts.
+
+
