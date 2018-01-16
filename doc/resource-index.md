@@ -1,4 +1,11 @@
 # Resource Index
+- [Books](#books)
+- [Websites](#website-resources)
+- [Interesting Perspectives](#interesting-perspectives)
+- [Gitter Chat Rooms](#gitter-chat-rooms)
+
+---
+
 ## Books
 #### Domain Driven Design
 - [Implementing Domain Driven Design](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577/ref=asap_bc?ie=UTF8)
@@ -32,4 +39,10 @@ Akka
 
 ## Interesting Perspectives
 - [Morgan Stanley](https://vimeo.com/147697498)
-- [Goldman Sachs]()
+
+- [Linked-in](https://engineering.linkedin.com/blog/2018/01/now-you-see-me--now-you-dont--linkedins-real-time-presence-platf)
+
+## Gitter Chat Rooms
+- [lagom/lagom](https://gitter.im/lagom/lagom)
+- [scala/scala](https://gitter.im/scala/scala)
+- [akka/akka](https://gitter.im/akka/akka)

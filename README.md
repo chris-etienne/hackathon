@@ -23,10 +23,16 @@ You should probably set up an ssh key rather than using HTTPS authentication.  T
 #### B.  Get a [Slack](https://www.slack.com) account
 We will use a specially created slack workspace called [nx-hackathon.slack.com](https://nx-hackathon.slack.com) for this event.
 
+### III.  Fork our private github repository and clone your fork
 
-### III. Materials to Prepare you for the hackathon
+#### Step One:    
+
+
+
+### IV. Materials to Prepare you for the hackathon
 #### A. Read the [case study](pre-read-case-study.md)
-#### B. Look at the [forks](https://github.com/evolution-labs) in the evolution-labs github account
+#### B.  Try the [Exercises](/exercises/overview.md)
+#### C. Look at the [forks](https://github.com/evolution-labs) in the evolution-labs github account
 >##### [Online Auction (Scala)](https://github.com/evolution-labs/online-auction-scala) 
 >Reference Application using Lagom, Kafka and Cassandra, written in **Scala**.
 
@@ -45,14 +51,4 @@ We will use a specially created slack workspace called [nx-hackathon.slack.com](
 >##### [Akka Samples](https://github.com/evolution-labs/akka-samples)
 >Sample Akka Projects from Lightbend
 
-
-
-
-
-### IV. Resources
-#### A. Gitter Chat Rooms
-##### [lagom/lagom](https://gitter.im/lagom/lagom)
-##### [scala/scala](https://gitter.im/scala/scala)
-##### [akka/akka](https://gitter.im/akka/akka)
-
-#### B. [Another list of resources is located here](/doc/resource-index.md)
+### D. Explore the [Resources](/doc/resource-index.md) that we curated for you

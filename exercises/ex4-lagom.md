@@ -1,14 +1,26 @@
-# Exercise II:  Lagom
+# Exercise IV:  Lagom
 
-##### Note:  This document is largely a summary of the [Lagom Documentation]().  Any mistakes are mine.
+## Index
+[Background](#background)
+
+[Video Resources](#video-resources)
+
+[Documentation](#documentation)
+
+[Code Samples](#code-samples)
+
+[Exercise](#exercise)
+
+---
+
 ## Background
+##### Note:  This document is largely a summary of the [Lagom Documentation]().  Any mistakes are mine.
 
 ### What is Lagom? 
 
 Lagom is a Swedish word meaning “just the right amount”.
 
 Microservices arent about size, they are about alignment with business capabilites and requirements to support isolation and resiliency. A system of right-sized microservices will help us achieve scalability and resiliency.
-
 
 ### What happened to all of the Akka talk?
 
@@ -37,19 +49,55 @@ We chose Lagom because it includes libraries and a development environment that 
 - We can use Java or Scala, or both.  
 - Lagom supports Event sourcing and CQRS (Command Query Responsibility Segregation) for persistence.
 - Lagom creates service clients for you (based on service descriptors), making it extremely easy to invoke and test endpoints.
-- Cloud Ready.  Kubernetes support.  Kubernetes is the leading an open-source solution for container orchestration.
+- Cloud Ready.  Kubernetes support.  Kubernetes is the le
+
+---
+## Documentation
+[Lagom Documentation - Scala](https://www.lagomframework.com/documentation/1.4.x/scala/Home.html)
+
+[Lagom Documentation - Java](https://www.lagomframework.com/documentation/1.4.x/java/Home.html)
+
+---
+## Code Samples
+Below is a list of code samples that you can try out and get a feel for how Lagom works.
+
+### Code Generators
+[Online Lagom Project Bootstrapper](https://developer.lightbend.com/start/?group=lagom&project=lagom-java-maven)
+
+#### .g8 Templates
+> Instructions for using .g8 Templates
+> See [example](/examples/lagom/using-g8-lagom.md) for using sbt code generator here
+
+Sample Templates
+
+[Scala](https://github.com/lagom/lagom-scala.g8)
+
+[Java](https://github.com/lagom/lagom-java.g8)
 
 
-## Resources
+### Java
+[Chirper Application - Twitter Clone - Java](https://github.com/lagom/lagom-java-chirper-example)
 
-Videos from Jonas Boner
+[Online Auction Example - Java](https://github.com/lagom/online-auction-java)
 
-#### Microservices Blah, Blah, Blah
-[Longer Version of the Above](https://www.youtube.com/watch?v=DRK7WYNh6AA)
+[Lagom Recipes](https://github.com/lagom/lagom-recipes)
 
+[Lagom Tutorial](https://github.com/eugenp/tutorials/tree/master/lagom)
 
+### Scala
+[Online Auction Example - Scala](https://github.com/lagom/online-auction-scala)
 
-Lagom Promotional Videos:
+[lagom-evolution project from the Reactive Launch]()
+
+---
+## Video Resources
+### Videos from Jonas Boner
+#### Microservices Blah, Blah
+- [Shorter Version](https://www.youtube.com/watch?v=9gLrCPVrXo4) 
+Shorter Version - 18 mins 
+- [Longer Version of the Above](https://www.youtube.com/watch?v=DRK7WYNh6AA) - 1 hr+
+
+### Lagom Videos:
 
 - [Meet Lagom](https://youtu.be/d1jT0UOVx9U)
   - Marketing piece for Lagom, but does a good job at highlighting the benefits of using a more opinionated framework to increase productivity
@@ -67,3 +115,16 @@ Lagom Promotional Videos:
 - [Managing Data Persistence](https://youtu.be/yj581pSRflQ)
   - Systems are distributed. Akka Cluster and Akka Persistence are used under the hood to a create distributed system. CQRS and event sourcing patterns are fully supported. 
    - Runtime: 16 MINS
+
+### Exercise
+
+In this exercise, you will build your first microservice using Lagom.  
+
+### Frequently asked questions
+#### Scala
+[How do I incorporate an external service (non-lagom) into a lagom application?](https://www.lagomframework.com/documentation/1.4.x/scala/IntegratingNonLagom.html)
+
+#### Java
+[How do I incorporate an external service (non-lagom) into a lagom application?](https://www.lagomframework.com/documentation/1.4.x/java/IntegratingNonLagom.html)
+
+[How do I use Spring with Lagom?]()
