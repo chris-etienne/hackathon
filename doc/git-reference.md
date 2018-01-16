@@ -18,9 +18,8 @@ When URL's are specific to your account, you'll want to replace the `<YOUR NAME 
 You can authenticate with `Bitbucket` via `https` or `ssh`. To use ssh, recommended, add a public key
  to your bitbucket and github user account settings.
  
-[Instructions for setting up ssh](/docs/setting-up-ssh.md)
+[Instructions for setting up ssh](/doc/setting-up-ssh.md)
 
- 
 ### Fork a Repository 
 
 The first step in creating a PR is to `fork` the repo that you want to change.
@@ -33,7 +32,7 @@ A fork is a copy of a repository. Forking a repository allows you to freely
 From the [project](https://github.com/evolution-labs/hackathon) page on Github,
  use the `fork` icon:
  
-![image](resources/fork-repository.jpeg)
+![forking](resources/fork-repository.jpeg)
 
  To access the `Fork this repository` under `Get to Work` of the create pop-up menu.
 
