@@ -12,7 +12,48 @@ Graphviz is a tool that will allow you to rapidly create diagrams that you can u
 
 ## Instructions for Setup
 
-1. Install Visual Studio Code
-2. Install the [Graphviz (dot) language support for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=Stephanvs.dot)
-3. Install the [Graphviz Preview Extension](https://marketplace.visualstudio.com/items?itemName=EFanZh.graphviz-preview)
+1. Install the Dot Language.
 
+You'll need to install this first.  It is a prerequite.  The extension for Visual Studio code requires it.
+
+First you'll need to download it from [graphviz.org](http://graphviz.org/download):
+
+![image](/resources/8-downloading=dot.PNG)
+
+You can tell if its not installed if you see a message like this:
+
+![image](/resources/7-no-dot-installed.PNG)
+
+2. Install Visual Studio Code
+
+3. Install the [Graphviz (dot) language support for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=Stephanvs.dot)
+
+![image](/resources/5-GraphViz-extension.PNG)
+
+
+4. Install the [Graphviz Preview Extension](https://marketplace.visualstudio.com/items?itemName=EFanZh.graphviz-preview)
+
+![image](/resources/6-adding-preview-ext.PNG)
+
+## Frequently Asked Questions
+
+### I Started Up Visual Studio Code and it cant find GIT
+
+You are probably seeing something that looks like this:
+
+![image](/resources/git-not-installed.PNG)
+
+If your screen looks like this, you need to install git:
+
+![image](/resources/install-git.PNG)
+![image](/resources/installing-git.PNG)
+
+### What do I do if Visual Studio can't find DOT.exe?
+
+First you should find the location of dot.exe. It will likely be located here:
+
+![image](/resources/Location-of-dot-exe.PNG)
+
+Next you'll need to fix the missing reference in the Visual Studio configuration:
+
+![image](/resources/setting-dot-path.PNG)

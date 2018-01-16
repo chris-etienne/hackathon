@@ -2,7 +2,6 @@
 
 ## Getting access to LightBend
 
-
 ### Setting up your credentials
 
 #### Creating an account
