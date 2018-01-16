@@ -1,22 +1,16 @@
 # Git Reference
 
-This guide is a quick introduction to using Git. The most common commands are
- described for reference. This guide's examples uses the [Evolution on Bitbucket](https://bitbucket.org/nx-team/evolution/src)
- repository using the [command line tool](https://help.github.com/articles/set-up-git/#setting-up-git). 
+This guide is a quick introduction to using Git. The most common commands are described for reference. This guide's examples uses the [Evolution on Bitbucket](https://bitbucket.org/nx-team/evolution/src) repository using the [command line tool](https://help.github.com/articles/set-up-git/#setting-up-git). 
 
 ## Overview
 
-`pull requests,` commonly referred to as `PRs,` are how changes to code repositories are proposed.
-  The `pull request` request is a set of proposed changes. The owner of repository will review
-  the request and either `merge` your PR or request changes to your PR.
+`pull requests,` commonly referred to as `PRs,` are how changes to code repositories are proposed. The `pull request` request is a set of proposed changes. The owner of repository will review the request and either `merge` your PR or request changes to your PR.
   
-When URL's are specific to your account, you'll want to replace the `<YOUR NAME HERE>` in the example URL 
- with your Bitbucket username.
+When URL's are specific to your account, you'll want to replace the `<YOUR NAME HERE>` in the example URL with your Github (or Bitbucket) username.
 
 ### Authentication
 
-You can authenticate with `Bitbucket` via `https` or `ssh`. To use ssh, recommended, add a public key
- to your bitbucket and github user account settings.
+You can authenticate with `Github` or `Bitbucket` via `https` or `ssh`. To use ssh, recommended, add a public key to your bitbucket and github user account settings.
  
 [Instructions for setting up ssh](/doc/setting-up-ssh.md)
 
@@ -24,17 +18,13 @@ You can authenticate with `Bitbucket` via `https` or `ssh`. To use ssh, recommen
 
 The first step in creating a PR is to `fork` the repo that you want to change.
 
-A fork is a copy of a repository. Forking a repository allows you to freely
- experiment with changes without affecting the original project. Commits pushed to your
- fork are _not_ seen in the main repo until your PR is `merged` into the main repo by the repo
- owner.
+A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project. Commits pushed to your fork are _not_ seen in the main repo until your PR is `merged` into the main repo by the repo owner.
 
-From the [project](https://github.com/evolution-labs/hackathon) page on Github,
- use the `fork` icon:
+From the [project](https://github.com/evolution-labs/hackathon) page on Github, use the `fork` icon:
  
 ![forking](resources/fork-repository.jpeg)
 
- To access the `Fork this repository` under `Get to Work` of the create pop-up menu.
+To access the `Fork this repository` under `Get to Work` of the create pop-up menu.
 
 See also: [Github Doc - Forking](https://help.github.com/articles/fork-a-repo/)
 
