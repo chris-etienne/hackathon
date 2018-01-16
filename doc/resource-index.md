@@ -27,3 +27,9 @@ SBT (Simple Build Tool)
 - [Sbt Reference Manual](http://www.scala-sbt.org/1.x/docs/index.html)
 - [Sbt Gitter Channel](https://gitter.im/sbt/sbt)
 
+Akka
+- [Useful Akka Techniques](https://manuel.bernhardt.io/2014/04/23/a-handful-akka-techniques/)
+
+## Interesting Perspectives
+- [Morgan Stanley](https://vimeo.com/147697498)
+- [Goldman Sachs]()
