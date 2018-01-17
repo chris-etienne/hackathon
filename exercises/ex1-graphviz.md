@@ -10,7 +10,7 @@ Consider this a one-hour crash course on Domain Driven Design, CQRS and Eventsou
 
 1. Read [this article on Domain Driven Design and EventStorming](https://blog.redelastic.com/corporate-arts-crafts-modelling-reactive-systems-with-event-storming-73c6236f5dd7)
 
-2.  Make sure GraphViz is installed.  Instructions can be found [here](doc/GraphViz).
+2.  Make sure GraphViz is installed.  Instructions can be found [here](doc/GraphViz.md).
 
 
 ## Start to learn the terminology
