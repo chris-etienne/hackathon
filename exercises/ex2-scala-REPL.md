@@ -1,29 +1,19 @@
 
 # Using Scala REPL
 
-This is a basic [SBT][sbt] project designed to help you start working
-effectively in a Scala REPL (read-eval-print loop) as quickly as possible. Once
-you've cloned the project, you can open the SBT console with the following
-command:
+This is a exercise is designed to help you start working effectively in a Scala REPL (read-eval-print loop) as quickly as possible. 
 
-```bash
-./sbt
+Type scala to enter an interactive REPL
+```
+$ scala
+Welcome to Scala 2.12.4 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_151).
+Type in expressions for evaluation. Or try :help.
+
+scala>
 ```
 
 Note that you'll need to have [Java][java] installed on your machine for this to
-work. Once you're in the SBT console you can type `console` to open a Scala
-REPL. You should see something like this:
-
-```scala
-> console
-[info] Starting scala interpreter...
-[info] 
-Welcome to Scala version 2.11.7 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_66).
-Type in expressions to have them evaluated.
-Type :help for more information.
-
-scala> 
-```
+work. 
 
 You can now type Scala definitions and expressions and they will be evaluated
 immediately.
