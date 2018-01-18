@@ -4,9 +4,10 @@
 
 ### I. Software Installation
 #### [Intellij](https://www.jetbrains.com/idea/)
-For at least a portion of the hackathon, you will be using [Scala](https://www.scala-lang.org/).  The preferred IDE for Scala is [Intellij](https://www.jetbrains.com/idea/).  It would be best if you use the ultimate edition.  While this requires a subscription, you can get a trial edition of the software for 30 days.
+For at least a portion of the hackathon, you will be using [Scala](https://www.scala-lang.org/).  The preferred IDE for Scala is [Intellij](https://www.jetbrains.com/idea/). The community edition should be sufficient as long as you install the Scala plugin. 
+
 #### [Visual Studio Code](http://https://code.visualstudio.com) with [Graphviz](./doc/GraphViz.md) extention
-We'll use an extension for Visual Studio Code to assist us in our designs.  This extension allows Visual Studio Code to interpret the [DOT language](https://graphviz.gitlab.io/_pages/doc/info/lang.html).  You may find the [dotguide] (http://www.graphviz.org/pdf/dotguide.pdf) is useful to you.
+We'll use an extension for Visual Studio Code (free) to assist us in our designs.  This extension allows Visual Studio Code to interpret the [DOT language](https://graphviz.gitlab.io/_pages/doc/info/lang.html).  You may find the [dotguide] (http://www.graphviz.org/pdf/dotguide.pdf) is useful to you.
 ##### Installing Graphviz - follow these instructions provided [here.](./doc/GraphViz.md)
 
 
@@ -15,7 +16,11 @@ We'll use an extension for Visual Studio Code to assist us in our designs.  This
 
 #### A. Set up a [Github](http://www.github.com) account
 Please create a github account for yourself.  Once you have created that account, please send me a quick note on Slack that shares your github user name with me.
-> **Notes on the use of GitHub:**  You may find it odd that I am recommending that you get a GitHub account when, as a company, we use BitBucket.  
+> **Notes on the use of GitHub:**  
+You may find it odd that I am recommending that you get a GitHub account when, as a company, we use BitBucket.  Not everyone participating in the event will have a BitBucket account (nor will they need one).  We are charged for BitBucket licenses.  So, in order to introduce everyone to Git (and do so without cost), I am using GitHub to provide you with the materials to prep you for the event AND introduce you to the numerous projects on GitHub (in case you havent experienced it.)
+
+> **TO BE CLEAR, WE WILL NOT USE GITHUB FOR THE ARTIFACTS/DELIVERABLES/CODE that is produced at the event.  For that, the devs on each team will use their BitBucket accounts.  GitHub is only needed for preparation for the event.**
+
 
 ##### i.  Make sure that you secure Github, by [setting up an ssh key](/doc/setting-up-ssh-windows.md)
 You should probably set up an ssh key rather than using HTTPS authentication.  The above link provides the steps you'll need to follow if you don't already know how to do this.
@@ -26,8 +31,6 @@ We will use a specially created slack workspace called [nx-hackathon.slack.com](
 ### III.  Fork our private github repository (or our bitbucket repo, if you are already a bitbucket user) and clone your fork
 
 #### Step One:    
-
-
 
 ### IV. Materials to Prepare you for the hackathon
 #### A. Read the [case study](pre-read-case-study.md)

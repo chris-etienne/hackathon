@@ -118,7 +118,9 @@ Shorter Version - 18 mins
 ---
 ### Exercise
 
-In this exercise, you will build your first microservice using Lagom.  
+In this exercise, you will build your first Lagom microservice, using an example from the Reactive Launch.  
+
+This exercise is under development.  We will notify you when it is available.
 
 ----
 ### Frequently asked questions
