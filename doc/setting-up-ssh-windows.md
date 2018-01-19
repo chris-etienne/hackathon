@@ -4,7 +4,9 @@ Use this section to create a default identity and SSH key when you're using Git 
 
 #### Step 1. Set up for default identity
 
-1. From the command line, enter ssh-keygen.
+0. Open Git Bash (press `Win+s` and look for Git Bash, it should be installed along with your git client).
+
+1. At the bash prompt enter `ssh-keygen`.
 The command prompts you for a file to save the key in:
 
 
